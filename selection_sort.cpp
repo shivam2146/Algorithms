@@ -31,15 +31,19 @@ void selecSort(T arr[],int size,bool asc = true){    //keep asc true for ascendi
     }
     swap<T>(arr[i],arr[index]);
   }
+ }
 }
+template <typename T>
+void printArray(T arr,int size){
+  for(int i=0; i<9; i++)
+    printf("%d ",arr[i]);
+
 }
 int main(){
   int arr[]={2,6,8,9,4,1,25,36,14};
-  cout<<"\nArray before sorting";
-  for(int i=0; i<9; i++)
-    cout << arr[i] << " ";
+  printf("\nArray before sorting:\n");
+  printArray(arr,9);
   sor::selecSort<int>(arr,9,true);
-  cout<<"\nArray after sorting";
-  for(int i=0; i<9; i++)
-    cout << arr[i] << " ";
+  printf("\nArray after sorting\n");
+  printArray(arr,9);
 }
