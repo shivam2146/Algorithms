@@ -21,8 +21,8 @@ namespace sor{
 int main(){
   int arr[]={2,6,8,9,4,1,25,36,14};
   printf("\nArray before sorting:\n");
-  bas::printArray(arr,9);
+  bas::printArray<int>(arr,9);
   sor::inserSort<int>(arr,9);
   printf("\nArray after sorting\n");
-  bas::printArray(arr,9);
+  bas::printArray<int>(arr,9);
 }
