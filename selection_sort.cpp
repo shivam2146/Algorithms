@@ -29,8 +29,8 @@ void selecSort(T arr[],int size,bool asc = true){    //keep asc true for ascendi
 int main(){
   int arr[]={2,6,8,9,4,1,25,36,14};
   printf("\nArray before sorting:\n");
-  bas::printArray(arr,9);
+  bas::printArray<int>(arr,9);
   sor::selecSort<int>(arr,9,true);
   printf("\nArray after sorting\n");
-  bas::printArray(arr,9);
+  bas::printArray<int>(arr,9);
 }
