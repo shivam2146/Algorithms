@@ -6,8 +6,8 @@ namespace bas{
     b = temp;
   }
   template <typename T>
-  void printArray(T arr,int size){
-    for(int i=0; i<9; i++)
+  void printArray(T arr[],int size){
+    for(int i=0; i<size; i++)
       printf("%d ",arr[i]);
 
   }
