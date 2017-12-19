@@ -10,7 +10,7 @@ namespace bas{
   template <typename T>
   void printArray(T arr[],int size){
     for(int i=0; i<size; i++)
-      printf("%d ",arr[i]);
+      std::cout<<arr[i]<<" ";
     printf("\n");
   }
 
